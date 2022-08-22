@@ -1,0 +1,110 @@
+/* Fonte: Bubble Runes */
+@font-face {
+  font-family: 'Bubble Runes';
+  src: url('../fonts/bubble_runes-webfont.woff2') format('woff2'),
+       url('../fonts/bubble_runes-webfont.woff') format('woff');
+}
+
+/* Fonte: Odinson */
+@font-face {
+  font-family: 'Odinson';
+  src: url('../fonts/odinson-webfont.woff2') format('woff2'),
+  url('../fonts/odinson-webfont.woff') format('woff');
+}
+
+/* Fonte: Runes */
+@font-face {
+  font-family: 'Runes';
+  src: url('../fonts/myfontrunes-regular-webfont.woff2') format('woff2'),
+       url('../fonts/myfontrunes-regular-webfont.woff') format('woff');
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin: 2em 0;
+}
+
+h1 {
+  font-family: 'Odinson';
+  font-size: 3.5em;
+}
+
+.formulario {
+  margin-bottom: 5em;
+}
+
+#nome {
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  font-size: 2em;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+  display: block;
+}
+
+#nome:focus {
+  border-color: rgb(60, 89, 255);
+  transition: 0.2s;
+}
+
+#converter {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 1.25em;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease-in-out;
+}
+
+#converter:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+}
+
+#converter:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+  box-shadow: none;
+}
+
+/* NOME EM RUNAS
+  Aqui usaremos a fonte 'Bubble Runes' para "codificar" o 
+  nome/palavra recebida pelo usuário. */
+
+.nome-runas {
+  font-family: 'Bubble Runes';
+  font-size: 3.25rem;
+}
+
+/* DISPLAY 
+  Aqui mostraremos a palavra escrita de forma "traduzida". */
+
+.nome-display {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.15rem;
+  font-weight: lighter;
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.resultado {
+  text-align: center;
+}

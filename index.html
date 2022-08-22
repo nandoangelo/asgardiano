@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu nome em Asgard</title>
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+  <main>
+    <header>
+      <h1>SEU NOME EM ASGARDIANO</h1>
+      <hr>
+    </header>
+
+    <article class="formulario">
+      <form action="#" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        <input type="button" value="CONVERTER" name="converter" id="converter" onclick="convertepalavra()">
+      </form>
+    </article>
+
+    <article class="resultado" id="resultado">
+      <p class="nome-runas">palavra</p>
+      <p class="nome-display">palavra</p>
+    </article>
+  </main>
+
+  <script>
+
+    let nome_runas = document.querySelector('.nome-runas')
+    let nome_display = document.querySelector('.nome-display')
+
+    function convertepalavra() {
+      let palavra = document.getElementById('nome')
+
+      if (palavra.value == "" || palavra.value == 0) {
+        alert("Digite uma palavra")
+      }
+      
+      nome_runas.innerHTML = palavra.value.toLowerCase()
+      nome_display.innerHTML = palavra.value.toLowerCase()
+    }
+  </script>
+  
+</body>
+</html>
